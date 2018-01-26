@@ -1,8 +1,6 @@
 @font-face {
-  font-family: 'YourFontName';
-  /*a name to be used later*/
-  src: url("http://domain.com/fonts/font.ttf");
-  /*URL to font*/
+  font-family: 'Circular';
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-e94c982d7dee01d7e4424157ac9ed819.woff2");
 }
 
 @-webkit-keyframes backgroundScroll {
@@ -44,6 +42,7 @@
   -o-animation: 50s backgroundScroll infinite linear;
   -ms-animation: 50s backgroundScroll infinite linear;
   animation: 50s backgroundScroll infinite linear;
+  font-family: 'Circular';
   top: 0;
   left: 0;
   width: 100%;
@@ -70,14 +69,15 @@
   color: #FFF;
   position: relative;
   padding: 1rem 2rem;
-  font-weight: 900 !important;
+  font-weight: bold;
   text-transform: uppercase;
   border-radius: 8px;
-  font-size: 0.8rem;
-  opacity: 0.8;
+  font-size: 1rem;
+  opacity: 0.9;
   letter-spacing: 1px;
   text-decoration: none;
   box-shadow: #D64A35 0px 7px 2px,#000 0px 8px 5px;
+  transition: 200ms;
 }
 
 .overlay a:hover {
