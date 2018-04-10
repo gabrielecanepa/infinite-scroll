@@ -1,6 +1,52 @@
-@font-face {
-  font-family: 'Circular';
-  src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-e94c982d7dee01d7e4424157ac9ed819.woff2");
+.overlay {
+  position: fixed;
+  background: url("images/background.png") repeat center center;
+  background-size: cover;
+  -webkit-animation: 50s backgroundScroll infinite linear;
+  -moz-animation: 50s backgroundScroll infinite linear;
+  -o-animation: 50s backgroundScroll infinite linear;
+  -ms-animation: 50s backgroundScroll infinite linear;
+  animation: 50s backgroundScroll infinite linear;
+  font-family: 'Comfortaa', sans-serif;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay img {
+  width: 10rem;
+}
+.overlay .btn-wrap {
+  margin: 0 auto;
+  width: 20rem;
+  margin-top: 50px;
+}
+.overlay a {
+  background: #E7523C;
+  color: #FFF;
+  position: relative;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-shadow: #D64A35 0px 7px 2px,#000 0px 8px 5px;
+  transition: 200ms;
+}
+.overlay a:hover {
+  opacity: 1;
+}
+.overlay a:active {
+  top: 4px;
+  box-shadow: #D64A35 0px 3px 2px,#000 0px 3px 5px;
 }
 
 @-webkit-keyframes backgroundScroll {
@@ -8,7 +54,6 @@
     background-position: 0px -3000px;
   }
 }
-
 @-moz-keyframes backgroundScroll {
   100% {
     background-position: 0px -3000px;
@@ -20,71 +65,13 @@
     background-position: 0px -3000px;
   }
 }
-
 @-ms-keyframes backgroundScroll {
   100% {
     background-position: 0px -3000px;
   }
 }
-
 @keyframes backgroundScroll {
   100% {
     background-position: 0px -3000px;
   }
-}
-
-.overlay {
-  position: fixed;
-  background: url("images/background.png") repeat center center;
-  background-size: cover;
-  -webkit-animation: 50s backgroundScroll infinite linear;
-  -moz-animation: 50s backgroundScroll infinite linear;
-  -o-animation: 50s backgroundScroll infinite linear;
-  -ms-animation: 50s backgroundScroll infinite linear;
-  animation: 50s backgroundScroll infinite linear;
-  font-family: 'Circular';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.overlay img {
-  width: 10rem;
-}
-
-.overlay .btn-wrap {
-  margin: 0 auto;
-  width: 20rem;
-  margin-top: 50px;
-}
-
-.overlay a {
-  background: #E7523C;
-  color: #FFF;
-  position: relative;
-  padding: 1rem 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 1rem;
-  opacity: 0.9;
-  letter-spacing: 1px;
-  text-decoration: none;
-  box-shadow: #D64A35 0px 7px 2px,#000 0px 8px 5px;
-  transition: 200ms;
-}
-
-.overlay a:hover {
-  opacity: 1;
-}
-
-.overlay a:active {
-  top: 4px;
-  box-shadow: #D64A35 0px 3px 2px,#000 0px 3px 5px;
 }
